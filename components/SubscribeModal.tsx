@@ -17,7 +17,7 @@ interface SubscribeModalProps {
 }
 
 const formatPrice = (price: Price) => {
-  const priceString = new Intl.NumberFormat('en-US', {
+  const priceString = new Intl.NumberFormat('en-IN', {
     style: 'currency',
     currency: price.currency,
     minimumFractionDigits: 0
@@ -109,6 +109,7 @@ const SubscribeModal: React.FC<SubscribeModalProps> = ({
     )
   }
 
+  console.log(products)
   return (
     <Modal
       title="Only for premium users"
